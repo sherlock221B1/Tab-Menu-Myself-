@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(160, 160, 160);
+}
+.container{
+    margin-top: 100px;
+    margin-left: 200px;
+}
+ul{
+    display: flex;/* li tags တွေကြားက space တွေဖျောက်ဖို့*/
+    padding: 0;
+    margin: 0;/* ul မှာ နဂိုကတည်းက padding margin တွေပါလာတဲ့အတွက် slide bar လေးက ကပ်မနေတော့။
+    ကပ်နေအောင်ဒီလိုပေး*/
+}
+li{
+    list-style: none;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(255, 86, 86);
+    padding: 9px 20px;
+    user-select: none;
+}
+.slider{
+    height: 5px;
+    background-color: aqua;
+}
