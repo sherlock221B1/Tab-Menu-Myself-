@@ -2,8 +2,11 @@ body{
     background-color: rgb(160, 160, 160);
 }
 .container{
+    position: relative;
     margin-top: 100px;
-    margin-left: 200px;
+}
+.tabMenuContainer{
+    position: relative; /* offserLeft အတွက်*/
 }
 ul{
     display: flex;/* li tags တွေကြားက space တွေဖျောက်ဖို့*/
@@ -16,11 +19,48 @@ li{
     display: inline-block;
     color: white;
     cursor: pointer;
-    background-color: rgb(255, 86, 86);
+    background-color: rgb(255, 22, 22);
     padding: 9px 20px;
     user-select: none;
 }
 .slider{
     height: 5px;
+    border-radius: 9px;
     background-color: aqua;
+    transition: all 0.4s ease-in-out;
+}
+.pageContainer{
+    display: flex;
+    padding-top: 30px;
+    border-top: 2px solid rgb(104, 104, 104);
+}
+.page{
+    background-color: blueviolet;
+    height: 0px;
+    width: 90vw;
+    font-size: 30px;
+
+    opacity: 0;
+    z-index: -1;
+    border-right: 1px solid blue;
+    transition: all 0.5s ease-out;
+}
+.pageShower{
+    height: 70vh;
+    opacity: 1;
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+}
+.page2{
+    background-color: rgb(255, 186, 97);
+}
+.page3{
+    background-color: rgb(124, 255, 124);
+}
+.page4{
+    background-color: rgb(255, 71, 71);
+}
+.page5{
+    background-color: rgb(124, 124, 255);
 }
